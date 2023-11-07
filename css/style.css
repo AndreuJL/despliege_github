@@ -1,19 +1,27 @@
-/* *********************************** */
-@import url(normalize.min.css);
-@import url(reset.css);
-
-/* *********************************** */
-/* *** ESTILOS GENERALES *** */
-/* *********************************** */
-
-/* Tipografía */
-@font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+/* Variables */
+:root {
+  --color-rojo: #f25041;
+  --color-azul: #33a6a6;
+  --color-lila: #8c1f66;
 }
 
-/* ******************************** */
+body {
+  background: var(--color-rojo);
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
 
-/* Colores */
+/* Tablet */
+@media only screen and (max-width: 768px) {
+  body {
+    background: var(--color-azul);
+  }
+}
 
-/* ******************************** */
+/* Movil */
+@media only screen and (max-width: 393px) {
+  body {
+    background: var(--color-lila);
+  }
+}
